@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.9rem;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: center;
+}
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    opacity: 0.7;
+}
+
+/* Content */
+.heading {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .heading h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  .content {
+    background-color: #f9f9f9; /* Background color for the content container */
+    padding: 20px; /* Add padding around the content */
+    margin: 20px 0; /* Add margin to separate content from other elements */
+  }
+  
+  .sub-heading {
+    font-size: 24px; /* Adjust the font size for sub-headings */
+    color: #333; /* Text color for sub-headings */
+    margin: 0 0 10px; /* Add spacing below sub-headings */
+  }
+  
+  .post-text {
+    font-size: 16px; /* Adjust the font size for paragraphs */
+    line-height: 1.5; /* Set line height for better readability */
+    color: #555; /* Text color for paragraphs */
+    margin: 0 0 20px; /* Add spacing below paragraphs */
+  }
+  
+.image {
+    /* Add your CSS rules here */
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 100%; /* Ensures the container doesn't exceed its parent's width */
+  }
+  
+  .image img {
+    /* Add styles specifically for the image element */
+    max-width: 100%; /* Ensures the image doesn't exceed its container's width */
+    max-height: 400px; /* Limits the maximum height of the image */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+
+p::selection{
+    background: #fae88e;
+}
+
+
+/* footer */
+footer{
+    background: var(--exDark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #fff;
+    color: var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+
+}
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 480px) {
+    .content {
+      padding: 15px;
+      margin: 10px 0;
+    }
+  
+    .sub-heading {
+      font-size: 20px;
+    }
+  
+    .post-text {
+      font-size: 14px;
+      line-height: 1.4;
+      margin: 0 0 15px;
+    }
+  }
+  @media (max-width: 480px) {
+    .image {
+      padding: 5px; /* Reduce padding for mobile */
+      border-radius: 0; /* Remove border radius for mobile */
+    }
+  
+    .image img {
+      max-height: 300px; /* Limit the maximum height for mobile */
+    }
+  }
+  @media (max-width: 480px) {
+    .heading {
+      padding: 5px; /* Reduce padding for mobile */
+    }
+  
+    .heading h2 {
+      font-size: 20px; /* Decrease font size for mobile */
+    }
+  }
+  
+
